@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.linear-bg {
+  background: rgb(84, 64, 106);
+  background: linear-gradient(
+    135deg,
+    rgba(84, 64, 106, 1) 3%,
+    rgba(168, 85, 247, 1) 47%
+  );
+}
+
+.linear-bg-text {
+  background: rgb(84, 64, 106);
+  background: linear-gradient(
+    135deg,
+    rgba(84, 64, 106, 1) 3%,
+    rgba(168, 85, 247, 1) 47%
+  );
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* For fallback */
+}
+
+.b-red {
+  border: 2px solid red;
+}
